@@ -35,4 +35,7 @@ return [
         ],
     ],
 
+    'lead_notify' => (bool) env('LEAD_NOTIFY_ENABLED', false),
+    'lead_notify_email' => env('ADMIN_NOTIFY_EMAIL'),
+
 ];

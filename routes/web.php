@@ -1,15 +1,14 @@
 <?php
 
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\LeadController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', LandingController::class)->name('landing');
 
-// TODO(Task 7): replace with LeadController@store handling validation + WA redirect.
-Route::post('/daftar', function () {
-    return back();
-})->name('leads.store');
+Route::post('/daftar', [LeadController::class, 'store'])
+    ->middleware('throttle:3,1')->name('leads.store');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
