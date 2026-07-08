@@ -1,0 +1,12 @@
+<x-public-layout>
+    @include('landing.partials.nav')
+    @include('landing.partials.hero')
+    @include('landing.partials.kenapa')
+    @include('landing.partials.galeri')
+    @include('landing.partials.program')
+    @include('landing.partials.testimoni')
+    @include('landing.partials.pendiri')
+    @include('landing.partials.faq')
+    @include('landing.partials.form')
+    @include('landing.partials.footer')
+</x-public-layout>
