@@ -123,4 +123,17 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Admin Gate Access Code
+    |--------------------------------------------------------------------------
+    |
+    | Optional access code required to reach login/reset routes while the
+    | site is not yet publicly launched. When blank, the gate fails open
+    | (no lockout).
+    |
+    */
+
+    'admin_gate_code' => env('ADMIN_GATE_CODE'),
+
 ];
