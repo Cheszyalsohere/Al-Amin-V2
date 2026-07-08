@@ -4,7 +4,7 @@ use App\Http\Controllers\GateController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\ProfileController;
-use App\Livewire\Admin\{LeadsTable, LeadDetail};
+use App\Livewire\Admin\{LeadsTable, LeadDetail, ProgramsManager, TestimonialsManager, FaqsManager, StatsManager, SettingsForm};
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', LandingController::class)->name('landing');
@@ -28,6 +28,11 @@ Route::middleware('auth')->group(function () {
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/leads', LeadsTable::class)->name('admin.leads');
     Route::get('/leads/{lead}', LeadDetail::class)->name('admin.leads.show');
+    Route::get('/konten', ProgramsManager::class)->name('admin.konten');
+    Route::get('/testimoni', TestimonialsManager::class)->name('admin.testimoni');
+    Route::get('/faq', FaqsManager::class)->name('admin.faq');
+    Route::get('/statistik', StatsManager::class)->name('admin.statistik');
+    Route::get('/pengaturan', SettingsForm::class)->name('admin.pengaturan');
 });
 
 require __DIR__.'/auth.php';

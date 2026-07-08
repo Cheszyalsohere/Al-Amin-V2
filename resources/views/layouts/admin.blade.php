@@ -26,12 +26,24 @@
                    class="flex items-center gap-2 px-3 py-2 rounded-card text-sm font-medium {{ request()->routeIs('admin.leads*') ? 'bg-surface-2 text-ink' : 'text-muted hover:text-ink' }}">
                     Leads
                 </a>
-                <a href="#"
-                   class="flex items-center gap-2 px-3 py-2 rounded-card text-sm text-muted hover:text-ink">
+                <a href="{{ route('admin.konten') }}"
+                   class="flex items-center gap-2 px-3 py-2 rounded-card text-sm font-medium {{ request()->routeIs('admin.konten*') ? 'bg-surface-2 text-ink' : 'text-muted hover:text-ink' }}">
                     Konten
                 </a>
-                <a href="#"
-                   class="flex items-center gap-2 px-3 py-2 rounded-card text-sm text-muted hover:text-ink">
+                <a href="{{ route('admin.testimoni') }}"
+                   class="flex items-center gap-2 px-3 py-2 pl-6 rounded-card text-sm {{ request()->routeIs('admin.testimoni*') ? 'bg-surface-2 text-ink font-medium' : 'text-muted hover:text-ink' }}">
+                    Testimoni
+                </a>
+                <a href="{{ route('admin.faq') }}"
+                   class="flex items-center gap-2 px-3 py-2 pl-6 rounded-card text-sm {{ request()->routeIs('admin.faq*') ? 'bg-surface-2 text-ink font-medium' : 'text-muted hover:text-ink' }}">
+                    FAQ
+                </a>
+                <a href="{{ route('admin.statistik') }}"
+                   class="flex items-center gap-2 px-3 py-2 pl-6 rounded-card text-sm {{ request()->routeIs('admin.statistik*') ? 'bg-surface-2 text-ink font-medium' : 'text-muted hover:text-ink' }}">
+                    Statistik
+                </a>
+                <a href="{{ route('admin.pengaturan') }}"
+                   class="flex items-center gap-2 px-3 py-2 rounded-card text-sm font-medium {{ request()->routeIs('admin.pengaturan*') ? 'bg-surface-2 text-ink' : 'text-muted hover:text-ink' }}">
                     Pengaturan
                 </a>
             </nav>
