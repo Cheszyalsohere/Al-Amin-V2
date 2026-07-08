@@ -50,8 +50,8 @@
                             </a>
                         </td>
                         <td class="py-3 text-ink">{{ $lead->kelas }}</td>
-                        <td class="py-3 text-ink">{{ $lead->program_minat }}</td>
-                        <td class="py-3 text-muted">{{ $lead->sumber }}</td>
+                        <td class="py-3 text-ink">{{ $lead->program_minat ? (\App\Enums\ProgramType::tryFrom($lead->program_minat)?->label() ?? $lead->program_minat) : '—' }}</td>
+                        <td class="py-3 text-muted">{{ \App\Enums\LeadSource::tryFrom($lead->sumber)?->label() ?? $lead->sumber }}</td>
                         <td class="py-3">
                             <span class="inline-block text-xs font-medium px-2.5 py-1 rounded-pill {{ $lead->status->badgeClasses() }}">
                                 {{ $lead->status->label() }}

@@ -4,7 +4,7 @@
     <div class="mt-4 flex items-start justify-between">
         <div>
             <h1 class="text-2xl font-semibold text-ink tracking-tight">{{ $lead->nama }}</h1>
-            <p class="text-sm text-muted mt-1">{{ $lead->kelas }} &middot; {{ $lead->asal_sekolah }} &middot; {{ $lead->program_minat }}</p>
+            <p class="text-sm text-muted mt-1">{{ $lead->kelas }} &middot; {{ $lead->asal_sekolah }} &middot; {{ $lead->program_minat ? (\App\Enums\ProgramType::tryFrom($lead->program_minat)?->label() ?? $lead->program_minat) : '—' }}</p>
         </div>
 
         <span class="inline-block text-xs font-medium px-2.5 py-1 rounded-pill {{ $lead->status->badgeClasses() }}">
