@@ -18,7 +18,7 @@
                 <input type="text" name="nama" id="nama" value="{{ old('nama') }}"
                     class="w-full rounded-xl border-line focus:border-ink focus:ring-ink text-sm">
                 @error('nama')
-                    <p class="text-red-600 text-xs mt-1.5">{{ $message }}</p>
+                    <p class="text-error text-xs mt-1.5">{{ $message }}</p>
                 @enderror
             </div>
 
@@ -28,7 +28,7 @@
                     <input type="text" name="no_hp" id="no_hp" value="{{ old('no_hp') }}"
                         class="w-full rounded-xl border-line focus:border-ink focus:ring-ink text-sm">
                     @error('no_hp')
-                        <p class="text-red-600 text-xs mt-1.5">{{ $message }}</p>
+                        <p class="text-error text-xs mt-1.5">{{ $message }}</p>
                     @enderror
                 </div>
 
@@ -37,7 +37,7 @@
                     <input type="text" name="no_hp_ortu" id="no_hp_ortu" value="{{ old('no_hp_ortu') }}"
                         class="w-full rounded-xl border-line focus:border-ink focus:ring-ink text-sm">
                     @error('no_hp_ortu')
-                        <p class="text-red-600 text-xs mt-1.5">{{ $message }}</p>
+                        <p class="text-error text-xs mt-1.5">{{ $message }}</p>
                     @enderror
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 <input type="text" name="asal_sekolah" id="asal_sekolah" value="{{ old('asal_sekolah') }}"
                     class="w-full rounded-xl border-line focus:border-ink focus:ring-ink text-sm">
                 @error('asal_sekolah')
-                    <p class="text-red-600 text-xs mt-1.5">{{ $message }}</p>
+                    <p class="text-error text-xs mt-1.5">{{ $message }}</p>
                 @enderror
             </div>
 
@@ -61,7 +61,7 @@
                         @endforeach
                     </select>
                     @error('kelas')
-                        <p class="text-red-600 text-xs mt-1.5">{{ $message }}</p>
+                        <p class="text-error text-xs mt-1.5">{{ $message }}</p>
                     @enderror
                 </div>
 
@@ -74,7 +74,7 @@
                         @endforeach
                     </select>
                     @error('program_minat')
-                        <p class="text-red-600 text-xs mt-1.5">{{ $message }}</p>
+                        <p class="text-error text-xs mt-1.5">{{ $message }}</p>
                     @enderror
                 </div>
 
@@ -87,7 +87,7 @@
                         @endforeach
                     </select>
                     @error('sumber')
-                        <p class="text-red-600 text-xs mt-1.5">{{ $message }}</p>
+                        <p class="text-error text-xs mt-1.5">{{ $message }}</p>
                     @enderror
                 </div>
             </div>

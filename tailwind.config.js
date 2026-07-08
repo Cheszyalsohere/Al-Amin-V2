@@ -19,6 +19,7 @@ export default {
                 muted: 'var(--color-muted)',
                 line: 'var(--color-line)',
                 live: 'var(--color-live)',
+                error: '#B42318',
             },
             fontFamily: {
                 sans: ['Geist', 'Hanken Grotesk', ...defaultTheme.fontFamily.sans],
