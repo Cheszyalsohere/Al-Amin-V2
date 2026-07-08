@@ -23,4 +23,17 @@ enum LeadStatus: string
     {
         return collect(self::cases())->mapWithKeys(fn ($c) => [$c->value => $c->label()])->all();
     }
+
+    /**
+     * Small pill badge tint classes (admin-only allowance for semantic color).
+     */
+    public function badgeClasses(): string
+    {
+        return match ($this) {
+            self::Baru => 'bg-amber-50 text-amber-800',
+            self::Dikontak => 'bg-blue-50 text-blue-800',
+            self::Daftar => 'bg-green-50 text-green-800',
+            self::ClosedLost => 'bg-gray-100 text-gray-700',
+        };
+    }
 }
