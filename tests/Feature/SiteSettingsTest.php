@@ -2,8 +2,9 @@
 
 use App\Models\SiteSetting;
 use App\Support\SiteSettings;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
 test('fallback dipakai saat kosong', function () {
     expect(SiteSettings::get('wa_number'))->toBe('6285190909689');

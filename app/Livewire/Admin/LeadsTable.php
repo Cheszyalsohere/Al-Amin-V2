@@ -12,6 +12,7 @@ class LeadsTable extends Component
     use WithPagination;
 
     public string $status = '';
+
     public string $search = '';
 
     public function updating($name): void

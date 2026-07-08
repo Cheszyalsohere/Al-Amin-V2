@@ -1,11 +1,14 @@
 <?php
 
-use App\Models\{Program, SiteSetting, User};
+use App\Livewire\Admin\ProgramsManager;
+use App\Livewire\Admin\SettingsForm;
+use App\Models\Program;
+use App\Models\User;
 use App\Support\SiteSettings;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
-use App\Livewire\Admin\{ProgramsManager, SettingsForm};
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
 test('admin membuat & menghapus program', function () {
     $this->actingAs(User::factory()->create());

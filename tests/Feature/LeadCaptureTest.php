@@ -1,12 +1,14 @@
 <?php
 
-use App\Models\Lead;
 use App\Mail\NewLeadNotification;
+use App\Models\Lead;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
-function validPayload(array $override = []): array {
+function validPayload(array $override = []): array
+{
     return array_merge([
         'nama' => 'Siti Aminah', 'no_hp' => '081234567890', 'no_hp_ortu' => '081298765432',
         'kelas' => '12 IPA', 'program_minat' => 'utbk', 'sumber' => 'website', 'website' => '',

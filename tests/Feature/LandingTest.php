@@ -1,8 +1,10 @@
 <?php
 
-use App\Models\{Program, Testimonial};
+use App\Models\Program;
+use App\Models\Testimonial;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
 test('landing tampil 200 & memakai fallback kontak saat db kosong', function () {
     $this->get('/')->assertOk()->assertSee('0851-9090-9689');

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Testimonial extends Model
 {
     protected $guarded = [];
+
     protected $casts = ['is_published' => 'boolean'];
 
     public function scopePublished(Builder $q): Builder

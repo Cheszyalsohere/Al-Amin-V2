@@ -4,7 +4,13 @@ use App\Http\Controllers\GateController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\ProfileController;
-use App\Livewire\Admin\{LeadsTable, LeadDetail, ProgramsManager, TestimonialsManager, FaqsManager, StatsManager, SettingsForm};
+use App\Livewire\Admin\FaqsManager;
+use App\Livewire\Admin\LeadDetail;
+use App\Livewire\Admin\LeadsTable;
+use App\Livewire\Admin\ProgramsManager;
+use App\Livewire\Admin\SettingsForm;
+use App\Livewire\Admin\StatsManager;
+use App\Livewire\Admin\TestimonialsManager;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', LandingController::class)->name('landing');

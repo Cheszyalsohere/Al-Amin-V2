@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class SiteSetting extends Model
 {
     protected $primaryKey = 'key';
+
     public $incrementing = false;
+
     protected $keyType = 'string';
+
     protected $guarded = [];
 }

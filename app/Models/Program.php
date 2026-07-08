@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Program extends Model
 {
     protected $guarded = [];
+
     protected $casts = ['is_published' => 'boolean', 'tags' => 'array'];
 
     public function scopePublished(Builder $q): Builder

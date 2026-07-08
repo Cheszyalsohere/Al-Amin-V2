@@ -1,11 +1,18 @@
 <?php
 
-use App\Models\{Program, Faq, Testimonial, SiteStat, SiteSetting, User};
+use App\Models\Faq;
+use App\Models\Program;
+use App\Models\SiteSetting;
+use App\Models\SiteStat;
+use App\Models\Testimonial;
+use App\Models\User;
+use Database\Seeders\ContentSeeder;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
 test('content seeder mengisi konten & admin', function () {
-    $this->seed(\Database\Seeders\ContentSeeder::class);
+    $this->seed(ContentSeeder::class);
 
     expect(SiteStat::count())->toBe(3);
     expect(Program::count())->toBe(3);
@@ -16,7 +23,7 @@ test('content seeder mengisi konten & admin', function () {
 });
 
 test('seeder idempotent (jalan 2x tidak duplikat)', function () {
-    $this->seed(\Database\Seeders\ContentSeeder::class);
-    $this->seed(\Database\Seeders\ContentSeeder::class);
+    $this->seed(ContentSeeder::class);
+    $this->seed(ContentSeeder::class);
     expect(Program::count())->toBe(3);
 });

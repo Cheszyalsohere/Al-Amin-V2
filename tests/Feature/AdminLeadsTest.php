@@ -1,12 +1,14 @@
 <?php
 
 use App\Enums\LeadStatus;
-use App\Models\{Lead, User};
-use Livewire\Livewire;
-use App\Livewire\Admin\LeadsTable;
 use App\Livewire\Admin\LeadDetail;
+use App\Livewire\Admin\LeadsTable;
+use App\Models\Lead;
+use App\Models\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Livewire\Livewire;
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
 test('guest tidak bisa akses admin leads', function () {
     $this->get('/admin/leads')->assertRedirect('/login');

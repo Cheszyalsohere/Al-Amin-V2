@@ -2,7 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\{Faq, Program, SiteSetting, SiteStat, Testimonial, User};
+use App\Models\Faq;
+use App\Models\Program;
+use App\Models\SiteSetting;
+use App\Models\SiteStat;
+use App\Models\Testimonial;
+use App\Models\User;
 use App\Support\SiteSettings;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;

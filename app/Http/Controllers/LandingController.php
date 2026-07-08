@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Enums\LeadSource;
 use App\Enums\ProgramType;
-use App\Models\{Faq, Program, SiteStat, Testimonial};
+use App\Models\Faq;
+use App\Models\Program;
+use App\Models\SiteStat;
+use App\Models\Testimonial;
 use App\Support\SiteSettings;
 
 class LandingController extends Controller

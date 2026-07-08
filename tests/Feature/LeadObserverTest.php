@@ -2,10 +2,12 @@
 
 use App\Enums\LeadStatus;
 use App\Models\Lead;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
-function makeLead(): Lead {
+function makeLead(): Lead
+{
     return Lead::create([
         'nama' => 'Budi', 'no_hp' => '08123456789', 'no_hp_ortu' => '08987654321',
         'kelas' => '12 IPA', 'sumber' => 'website', 'status' => LeadStatus::Baru,

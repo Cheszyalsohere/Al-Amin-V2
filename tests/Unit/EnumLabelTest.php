@@ -1,7 +1,7 @@
 <?php
 
-use App\Enums\LeadStatus;
 use App\Enums\LeadSource;
+use App\Enums\LeadStatus;
 use App\Enums\ProgramType;
 
 test('lead status label & options', function () {

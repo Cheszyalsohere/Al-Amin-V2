@@ -16,6 +16,7 @@ class SafeRedirect
         if (str_contains($next, '\\') || preg_match('#^/\s*\\\\#', $next)) {
             return $fallback;
         }
+
         return $next;
     }
 }
