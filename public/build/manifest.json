@@ -1,0 +1,151 @@
+{
+  "node_modules/@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff": {
+    "file": "assets/geist-sans-latin-400-normal-BOaIZNA2.woff",
+    "src": "node_modules/@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff2": {
+    "file": "assets/geist-sans-latin-400-normal-gapTbOY8.woff2",
+    "src": "node_modules/@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/geist-sans/files/geist-sans-latin-500-normal.woff": {
+    "file": "assets/geist-sans-latin-500-normal-CN2lyvyL.woff",
+    "src": "node_modules/@fontsource/geist-sans/files/geist-sans-latin-500-normal.woff"
+  },
+  "node_modules/@fontsource/geist-sans/files/geist-sans-latin-500-normal.woff2": {
+    "file": "assets/geist-sans-latin-500-normal-uokXdC-Q.woff2",
+    "src": "node_modules/@fontsource/geist-sans/files/geist-sans-latin-500-normal.woff2"
+  },
+  "node_modules/@fontsource/geist-sans/files/geist-sans-latin-600-normal.woff": {
+    "file": "assets/geist-sans-latin-600-normal-CA1yjETN.woff",
+    "src": "node_modules/@fontsource/geist-sans/files/geist-sans-latin-600-normal.woff"
+  },
+  "node_modules/@fontsource/geist-sans/files/geist-sans-latin-600-normal.woff2": {
+    "file": "assets/geist-sans-latin-600-normal-DFOURf8L.woff2",
+    "src": "node_modules/@fontsource/geist-sans/files/geist-sans-latin-600-normal.woff2"
+  },
+  "node_modules/@fontsource/geist-sans/files/geist-sans-latin-700-normal.woff": {
+    "file": "assets/geist-sans-latin-700-normal-CjScfYeH.woff",
+    "src": "node_modules/@fontsource/geist-sans/files/geist-sans-latin-700-normal.woff"
+  },
+  "node_modules/@fontsource/geist-sans/files/geist-sans-latin-700-normal.woff2": {
+    "file": "assets/geist-sans-latin-700-normal-BmN9tIp5.woff2",
+    "src": "node_modules/@fontsource/geist-sans/files/geist-sans-latin-700-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-400-normal.woff": {
+    "file": "assets/hanken-grotesk-cyrillic-ext-400-normal-C910xUUL.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-400-normal.woff2": {
+    "file": "assets/hanken-grotesk-cyrillic-ext-400-normal-BLTEyOai.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-500-normal.woff": {
+    "file": "assets/hanken-grotesk-cyrillic-ext-500-normal-klSdyF8A.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-500-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-500-normal.woff2": {
+    "file": "assets/hanken-grotesk-cyrillic-ext-500-normal-DJxU5DEV.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-500-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-600-normal.woff": {
+    "file": "assets/hanken-grotesk-cyrillic-ext-600-normal-CZKgvMB-.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-600-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-600-normal.woff2": {
+    "file": "assets/hanken-grotesk-cyrillic-ext-600-normal-gC6IfhiA.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-cyrillic-ext-600-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-400-normal.woff": {
+    "file": "assets/hanken-grotesk-latin-400-normal-CjyVwvJV.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-400-normal.woff2": {
+    "file": "assets/hanken-grotesk-latin-400-normal-BG6hkEXj.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-500-normal.woff": {
+    "file": "assets/hanken-grotesk-latin-500-normal-Bo-NxEKf.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-500-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-500-normal.woff2": {
+    "file": "assets/hanken-grotesk-latin-500-normal-DrDcrrxK.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-500-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-600-normal.woff": {
+    "file": "assets/hanken-grotesk-latin-600-normal-NEn2C4Q3.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-600-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-600-normal.woff2": {
+    "file": "assets/hanken-grotesk-latin-600-normal-CIXX6EOa.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-600-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-400-normal.woff": {
+    "file": "assets/hanken-grotesk-latin-ext-400-normal-DI-aIsWt.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-400-normal.woff2": {
+    "file": "assets/hanken-grotesk-latin-ext-400-normal-DR7lHpW4.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-500-normal.woff": {
+    "file": "assets/hanken-grotesk-latin-ext-500-normal-BNvrJ0Ju.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-500-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-500-normal.woff2": {
+    "file": "assets/hanken-grotesk-latin-ext-500-normal-DLb9JDK8.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-500-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-600-normal.woff": {
+    "file": "assets/hanken-grotesk-latin-ext-600-normal-DHIm05DD.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-600-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-600-normal.woff2": {
+    "file": "assets/hanken-grotesk-latin-ext-600-normal-FY8kSObK.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-ext-600-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-400-normal.woff": {
+    "file": "assets/hanken-grotesk-vietnamese-400-normal-C-iWyKLC.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-400-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-400-normal.woff2": {
+    "file": "assets/hanken-grotesk-vietnamese-400-normal-BLrFBAHj.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-400-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-500-normal.woff": {
+    "file": "assets/hanken-grotesk-vietnamese-500-normal-DkDHNoXI.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-500-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-500-normal.woff2": {
+    "file": "assets/hanken-grotesk-vietnamese-500-normal-DxwlvJEc.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-500-normal.woff2"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-600-normal.woff": {
+    "file": "assets/hanken-grotesk-vietnamese-600-normal-DHaFH8q1.woff",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-600-normal.woff"
+  },
+  "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-600-normal.woff2": {
+    "file": "assets/hanken-grotesk-vietnamese-600-normal-Cp8QQjQf.woff2",
+    "src": "node_modules/@fontsource/hanken-grotesk/files/hanken-grotesk-vietnamese-600-normal.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-CSC5mujW.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BfpX1doZ.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/charts.js": {
+    "file": "assets/charts-B-T97tEq.js",
+    "name": "charts",
+    "src": "resources/js/charts.js",
+    "isEntry": true
+  }
+}
