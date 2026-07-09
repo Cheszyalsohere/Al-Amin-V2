@@ -5,7 +5,7 @@
             <p class="text-sm text-muted mt-1">{{ $leads->total() }} total lead</p>
         </div>
 
-        <a href="{{ route('admin.leads.pdf', ['status' => $status, 'search' => $search]) }}"
+        <a href="{{ route('admin.leads.pdf', array_filter(['status' => $status, 'search' => $search])) }}"
             class="border border-line text-ink text-sm px-4 py-2 rounded-pill hover:bg-surface-2">
             Export PDF
         </a>

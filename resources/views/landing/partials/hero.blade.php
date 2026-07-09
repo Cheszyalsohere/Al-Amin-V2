@@ -33,7 +33,7 @@
             src="{{ asset('img/hero.jpg') }}"
             onerror="this.style.background='#F5F5F7';this.removeAttribute('src')"
             alt="Siswa belajar bersama tentor di kelas kecil"
-            class="w-full h-[340px] object-cover rounded-[20px]"
+            class="w-full h-[340px] object-cover rounded-2xl"
         >
 
         <div class="absolute left-4 bottom-4 bg-white rounded-2xl px-4 py-3 shadow-lg">

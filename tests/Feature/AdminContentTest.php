@@ -37,3 +37,17 @@ test('menyimpan settings kontak', function () {
         ->call('save');
     expect(SiteSettings::get('wa_number'))->toBe('628999');
 });
+
+test('settings menolak wa_number kosong atau non-angka', function () {
+    $this->actingAs(User::factory()->create());
+
+    Livewire::test(SettingsForm::class)
+        ->set('values.wa_number', '')
+        ->call('save')
+        ->assertHasErrors(['values.wa_number' => 'required']);
+
+    Livewire::test(SettingsForm::class)
+        ->set('values.wa_number', '0851-9090')
+        ->call('save')
+        ->assertHasErrors(['values.wa_number' => 'regex']);
+});
