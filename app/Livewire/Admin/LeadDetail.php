@@ -13,7 +13,13 @@ class LeadDetail extends Component
 
     public function ubahStatus(string $status): void
     {
-        $this->lead->update(['status' => LeadStatus::from($status)]);
+        $newStatus = LeadStatus::tryFrom($status);
+
+        if ($newStatus === null) {
+            return;
+        }
+
+        $this->lead->update(['status' => $newStatus]);
         $this->lead->refresh();
     }
 

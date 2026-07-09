@@ -21,7 +21,7 @@ class LandingController extends Controller
             'faqs' => Faq::published()->get(),
             'settings' => SiteSettings::all(),
             'kelasOptions' => ['7 SMP', '8 SMP', '9 SMP', '10 IPA', '10 IPS', '11 IPA', '11 IPS', '12 IPA', '12 IPS'],
-            'programOptions' => collect(ProgramType::options())->only(['smp', 'sma_ipa', 'sma_ips', 'utbk'])->all(),
+            'programOptions' => ProgramType::publicOptions(),
             'sumberOptions' => LeadSource::options(),
         ]);
     }

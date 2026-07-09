@@ -13,11 +13,11 @@
     </div>
 
     <div class="flex items-center gap-3 mt-6">
-        <a href="https://wa.me/{{ $lead->no_hp }}" target="_blank" rel="noopener"
+        <a href="https://wa.me/{{ \App\Support\Phone::wa($lead->no_hp) }}" target="_blank" rel="noopener"
             class="border border-line text-ink text-sm font-medium px-5 py-2.5 rounded-pill hover:bg-surface-2">
             WA siswa
         </a>
-        <a href="https://wa.me/{{ $lead->no_hp_ortu }}" target="_blank" rel="noopener"
+        <a href="https://wa.me/{{ \App\Support\Phone::wa($lead->no_hp_ortu) }}" target="_blank" rel="noopener"
             class="border border-line text-ink text-sm font-medium px-5 py-2.5 rounded-pill hover:bg-surface-2">
             WA ortu
         </a>

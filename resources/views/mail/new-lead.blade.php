@@ -1,5 +1,5 @@
 @php
-    $waLink = 'https://wa.me/'.ltrim($lead->no_hp, '0');
+    $waLink = 'https://wa.me/'.\App\Support\Phone::wa($lead->no_hp);
 @endphp
 <!DOCTYPE html>
 <html lang="id">

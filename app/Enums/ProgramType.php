@@ -25,4 +25,10 @@ enum ProgramType: string
     {
         return collect(self::cases())->mapWithKeys(fn ($c) => [$c->value => $c->label()])->all();
     }
+
+    public static function publicOptions(): array
+    {
+        // options shown on the public registration form (excludes Olimpiade)
+        return collect(self::options())->except('olimpiade')->all();
+    }
 }

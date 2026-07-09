@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('email')->nullable();
             $table->string('asal_sekolah', 120)->nullable();
             $table->string('kelas', 24);
-            $table->string('program_minat')->nullable();
+            $table->string('program_minat')->nullable(); // nullable at DB level for manually-created leads; public form requires it (see StoreLeadRequest)
             $table->string('sumber')->index();
             $table->string('status')->default('baru')->index();
             $table->text('catatan')->nullable();

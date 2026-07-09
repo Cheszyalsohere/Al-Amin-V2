@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Enums\LeadSource;
+use App\Enums\ProgramType;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
@@ -24,7 +25,7 @@ class StoreLeadRequest extends FormRequest
             'email' => ['nullable', 'email', 'max:255'],
             'asal_sekolah' => ['nullable', 'string', 'max:120'],
             'kelas' => ['required', 'string', 'max:24'],
-            'program_minat' => ['required', Rule::in(['smp', 'sma_ipa', 'sma_ips', 'utbk'])],
+            'program_minat' => ['required', Rule::in(array_keys(ProgramType::publicOptions()))],
             'sumber' => ['required', Rule::in(array_keys(LeadSource::options()))],
             'catatan' => ['nullable', 'string', 'max:2000'],
             'website' => ['nullable'], // honeypot
