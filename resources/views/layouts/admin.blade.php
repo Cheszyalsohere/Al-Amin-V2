@@ -7,7 +7,7 @@
 
     <title>Admin &mdash; {{ config('app.name', 'Al-Amin Bimbingan Belajar') }}</title>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/charts.js'])
     @livewireStyles
 </head>
 <body class="font-sans antialiased bg-bg text-ink">
@@ -18,8 +18,8 @@
             </div>
 
             <nav class="flex-1 px-3 py-4 space-y-1">
-                <a href="#"
-                   class="flex items-center gap-2 px-3 py-2 rounded-card text-sm text-muted hover:text-ink">
+                <a href="{{ route('admin.overview') }}"
+                   class="flex items-center gap-2 px-3 py-2 rounded-card text-sm font-medium {{ request()->routeIs('admin.overview') ? 'bg-surface-2 text-ink' : 'text-muted hover:text-ink' }}">
                     Overview
                 </a>
                 <a href="{{ route('admin.leads') }}"

@@ -7,6 +7,7 @@ use App\Http\Controllers\ProfileController;
 use App\Livewire\Admin\FaqsManager;
 use App\Livewire\Admin\LeadDetail;
 use App\Livewire\Admin\LeadsTable;
+use App\Livewire\Admin\Overview;
 use App\Livewire\Admin\ProgramsManager;
 use App\Livewire\Admin\SettingsForm;
 use App\Livewire\Admin\StatsManager;
@@ -21,9 +22,7 @@ Route::post('/gate', [GateController::class, 'submit'])->name('gate.submit');
 Route::post('/daftar', [LeadController::class, 'store'])
     ->middleware('throttle:3,1')->name('leads.store');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::redirect('/dashboard', '/admin')->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -32,6 +31,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth')->prefix('admin')->group(function () {
+    Route::get('/', Overview::class)->name('admin.overview');
     Route::get('/leads', LeadsTable::class)->name('admin.leads');
     Route::get('/leads/{lead}', LeadDetail::class)->name('admin.leads.show');
     Route::get('/konten', ProgramsManager::class)->name('admin.konten');
