@@ -1,7 +1,7 @@
 <section id="pendiri" class="bg-surface">
     <div class="max-w-6xl mx-auto px-6 md:px-11 py-16 md:py-24 grid md:grid-cols-[200px_1fr] gap-10 md:gap-14 items-start">
         <img
-            src="{{ asset('img/owner.jpg') }}"
+            src="{{ asset('img/owner.jpeg') }}"
             onerror="this.style.background='#EBEBED';this.removeAttribute('src')"
             alt="{{ $settings['owner_nama'] }}"
             class="w-[160px] md:w-[200px] h-[200px] md:h-[250px] object-cover rounded-2xl"
