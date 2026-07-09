@@ -1,8 +1,9 @@
 <?php
 
 use App\Models\PageView;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
 test('kunjungan landing tercatat sebagai unique pertama kali', function () {
     $this->get('/')->assertOk();

@@ -1,10 +1,13 @@
 <?php
 
-use App\Models\{Lead, PageView, User};
-use Livewire\Livewire;
 use App\Livewire\Admin\Analytics;
+use App\Models\Lead;
+use App\Models\PageView;
+use App\Models\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Livewire\Livewire;
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
 test('guest diblok', fn () => $this->get('/admin/analytics')->assertRedirect('/login'));
 

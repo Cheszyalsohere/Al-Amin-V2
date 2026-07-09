@@ -5,7 +5,6 @@ namespace App\Support;
 use App\Enums\LeadSource;
 use App\Enums\LeadStatus;
 use App\Models\Lead;
-use Illuminate\Support\Carbon;
 
 class LeadMetrics
 {

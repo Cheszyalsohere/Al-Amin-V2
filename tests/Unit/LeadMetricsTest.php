@@ -8,15 +8,18 @@ use Tests\TestCase;
 
 uses(TestCase::class, RefreshDatabase::class);
 
-function lead(array $o = []): Lead {
+function lead(array $o = []): Lead
+{
     return Lead::create(array_merge([
-        'nama'=>'X','no_hp'=>'0812','no_hp_ortu'=>'0813','kelas'=>'12 IPA',
-        'sumber'=>'website','status'=>LeadStatus::Baru,
+        'nama' => 'X', 'no_hp' => '0812', 'no_hp_ortu' => '0813', 'kelas' => '12 IPA',
+        'sumber' => 'website', 'status' => LeadStatus::Baru,
     ], $o));
 }
 
 test('totals menghitung total, daftar, conversion', function () {
-    lead(); lead(['status'=>LeadStatus::Daftar]); lead(['status'=>LeadStatus::Daftar]);
+    lead();
+    lead(['status' => LeadStatus::Daftar]);
+    lead(['status' => LeadStatus::Daftar]);
     $t = LeadMetrics::totals();
     expect($t['total'])->toBe(3);
     expect($t['daftar'])->toBe(2);
@@ -36,7 +39,8 @@ test('trend mengembalikan N hari dengan 0 untuk hari kosong', function () {
 });
 
 test('bySource & byStatus menghitung', function () {
-    lead(['sumber'=>'instagram']); lead(['sumber'=>'instagram']);
+    lead(['sumber' => 'instagram']);
+    lead(['sumber' => 'instagram']);
     expect(LeadMetrics::bySource()['instagram'])->toBe(2);
     expect(LeadMetrics::byStatus()['baru'])->toBeGreaterThanOrEqual(2);
 });

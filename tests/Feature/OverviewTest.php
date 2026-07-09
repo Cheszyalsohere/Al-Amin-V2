@@ -1,10 +1,12 @@
 <?php
 
-use App\Models\{Lead, User};
-use Livewire\Livewire;
 use App\Livewire\Admin\Overview;
+use App\Models\Lead;
+use App\Models\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Livewire\Livewire;
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
 test('guest tak bisa akses overview', function () {
     $this->get('/admin')->assertRedirect('/login');
