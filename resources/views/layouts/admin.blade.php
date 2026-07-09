@@ -52,10 +52,11 @@
                 </a>
             </nav>
 
-            <div class="px-6 py-4 border-t border-line">
-                <p class="text-sm font-medium text-ink">Bu Heri</p>
+            <a href="{{ route('profile.edit') }}"
+               class="px-6 py-4 border-t border-line block hover:bg-surface-2 {{ request()->routeIs('profile.*') ? 'bg-surface-2' : '' }}">
+                <p class="text-sm font-medium text-ink">{{ auth()->user()->nickname ?? auth()->user()->name }}</p>
                 <p class="text-xs text-muted">Owner & Pembimbing</p>
-            </div>
+            </a>
         </aside>
 
         <main class="flex-1 bg-bg">
