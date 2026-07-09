@@ -5,10 +5,10 @@
             <p class="text-sm text-muted mt-1">{{ $leads->total() }} total lead</p>
         </div>
 
-        <button type="button" disabled
-            class="border border-line text-muted text-sm px-4 py-2 rounded-pill cursor-not-allowed">
+        <a href="{{ route('admin.leads.pdf', ['status' => $status, 'search' => $search]) }}"
+            class="border border-line text-ink text-sm px-4 py-2 rounded-pill hover:bg-surface-2">
             Export PDF
-        </button>
+        </a>
     </div>
 
     <div class="flex flex-wrap items-center gap-2 mb-6">

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\LeadPdfController;
 use App\Http\Controllers\GateController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LeadController;
@@ -35,6 +36,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/', Overview::class)->name('admin.overview');
     Route::get('/analytics', Analytics::class)->name('admin.analytics');
     Route::get('/leads', LeadsTable::class)->name('admin.leads');
+    Route::get('/leads/export/pdf', LeadPdfController::class)->name('admin.leads.pdf');
     Route::get('/leads/{lead}', LeadDetail::class)->name('admin.leads.show');
     Route::get('/konten', ProgramsManager::class)->name('admin.konten');
     Route::get('/testimoni', TestimonialsManager::class)->name('admin.testimoni');
