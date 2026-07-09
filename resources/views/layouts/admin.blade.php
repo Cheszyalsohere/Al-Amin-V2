@@ -22,6 +22,10 @@
                    class="flex items-center gap-2 px-3 py-2 rounded-card text-sm font-medium {{ request()->routeIs('admin.overview') ? 'bg-surface-2 text-ink' : 'text-muted hover:text-ink' }}">
                     Overview
                 </a>
+                <a href="{{ route('admin.analytics') }}"
+                   class="flex items-center gap-2 px-3 py-2 rounded-card text-sm font-medium {{ request()->routeIs('admin.analytics') ? 'bg-surface-2 text-ink' : 'text-muted hover:text-ink' }}">
+                    Analytics
+                </a>
                 <a href="{{ route('admin.leads') }}"
                    class="flex items-center gap-2 px-3 py-2 rounded-card text-sm font-medium {{ request()->routeIs('admin.leads*') ? 'bg-surface-2 text-ink' : 'text-muted hover:text-ink' }}">
                     Leads

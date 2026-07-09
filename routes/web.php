@@ -4,6 +4,7 @@ use App\Http\Controllers\GateController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\ProfileController;
+use App\Livewire\Admin\Analytics;
 use App\Livewire\Admin\FaqsManager;
 use App\Livewire\Admin\LeadDetail;
 use App\Livewire\Admin\LeadsTable;
@@ -32,6 +33,7 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/', Overview::class)->name('admin.overview');
+    Route::get('/analytics', Analytics::class)->name('admin.analytics');
     Route::get('/leads', LeadsTable::class)->name('admin.leads');
     Route::get('/leads/{lead}', LeadDetail::class)->name('admin.leads.show');
     Route::get('/konten', ProgramsManager::class)->name('admin.konten');
