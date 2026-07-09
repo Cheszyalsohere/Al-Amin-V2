@@ -13,7 +13,7 @@
                 $isUtbk = str_contains(strtolower($p->kode ?? ''), 'utbk');
                 $image = $images[strtolower($p->kode ?? '')] ?? 'program-sma.jpg';
             @endphp
-            <div class="border rounded-2xl overflow-hidden {{ $isUtbk ? 'border-ink' : 'border-line' }}">
+            <div class="border border-line rounded-2xl overflow-hidden">
                 <div class="relative">
                     <img
                         src="{{ asset('img/' . $image) }}"
